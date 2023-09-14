@@ -38,6 +38,9 @@ for i in primeiroano:anomaisrecente
     empty!(csv_i)
 end
 
+# Trocando valores missing por 0
+csv_coop_completo_1993a2022 = coalesce.(csv_coop_completo_1993a2022, 0)
+
 
 # Salvando .csv
 CSV.write("data/balanco_coop_cred_1993a2022_4010.csv", csv_coop_completo_1993a2022, writeheader=true)
