@@ -1,8 +1,5 @@
 # Webscraping dos Balancos Patrimoniais de Cooperativas de Crédito
 
-SCRIPT `2_importando_e_tratando_balanco.jl` AINDA NÃO ESTÁ FINALIZADO, FALTA SUBSTITUIR AS VÍRGULAS POR PONTOS NOS NÚMEROS.
-
-
 Objetivo deste script é aprender a fazer o download das informações, organizar e tratar os dados, mas utilizando a linguagem `Julia`.
 
 Este script é a tradução de um script em `R`, que pode ser encontrado em [aqui](https://github.com/rtheodoro/webscraping-balancos-patrimoniais-de-coop-cred).

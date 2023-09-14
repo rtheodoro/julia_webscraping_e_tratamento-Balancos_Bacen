@@ -1,3 +1,4 @@
+# Chamando pacotes (precisa instalar antes)
 using HTTP
 using Printf
 using Dates
@@ -19,13 +20,14 @@ for i in primeiroano:anomaisrecente
     u_bc_zip = "https://www4.bcb.gov.br/fis/cosif/cont/balan/cooperativas/$(i)12COOPERATIVAS.ZIP"
     
     response = HTTP.get(u_bc_zip)
+
+    # Baixando os arquivos
     open(dest_file, "w") do file
         write(file, response.body)
     end
 end
 
 # Extraindo os ZIP para CSV
-
 files = [joinpath("data_raw", file) for file in readdir("data_raw") if endswith(file, ".zip")]
 
 outDir = "data_raw/"
