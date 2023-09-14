@@ -13,11 +13,9 @@ Este projeto serve para fazer o download do balanço consolidado de todas as Coo
 
 #### Estrutura do projeto
 
-- o script `0_main` irá rodar os scritps `1_webscraping` e `2_tratamento`
-
 - a pasta `data_raw` contém os arquivos .zip e .csv baixados diretamente do Bacen
 
-- a pasta `data` contém o arquivo final, com os balanços tratados e unificados em apenas uma planinha
+- a pasta `data` contém o arquivo final, com os balanços tratados e unificados em apenas uma planilha
 
 
 #### NOTA
